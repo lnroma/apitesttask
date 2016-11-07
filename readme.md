@@ -49,4 +49,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
    {"code":500,"errors":{"auth":"This user or password is not exists"}}
    `````
 ## run unit test
-./vendor/bin/phpunit // in root project directory
+run comand 
+`````
+./vendor/bin/phpunit 
+`````
+in root project directory
