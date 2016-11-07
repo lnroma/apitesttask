@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(array('prefix' => 'api/v1'),function (){
+    Route::get('/login','User@login');
+    Route::get('/registration','User@registration');
 });
+
+Auth::routes();
+Route::get('/', 'HomeController@index');
